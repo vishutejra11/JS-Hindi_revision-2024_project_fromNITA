@@ -42,5 +42,10 @@ console.log("C" , newArr);
 console.log(myn2);
 
 
+// Basic diff between slice return a subaaray of array 
+// And splice delete the specific part from array 
+
+
+
 
 

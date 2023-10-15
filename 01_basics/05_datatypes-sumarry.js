@@ -42,3 +42,39 @@ console.table([typeof arr,typeof obj,typeof myFunc]);// object,object, function
 
 
 
+// Stack And Heap Memory In JavaScript -- 
+
+// Stack -- Primitive 
+// Heap -- Non-Primitive (Reference)
+
+let mySchool = "ShreeGanga";
+
+let newSchool = mySchool;
+
+newSchool = "Jma";
+console.log(mySchool);// ShreeGanga
+console.log(newSchool);// Jma 
+
+/*Incause of primitive variables Whene we
+assign another variable to any variable then its copy will be pass not its 
+and for new variable there is another memeory in stack 
+So changing in one does not effect another one 
+*/
+
+let myObj = {
+    email : "anil@google.com",
+    id : 12345,
+}
+let newObj = myObj;
+newObj.email = "akp@amazon.com";
+
+console.log(myObj.email);//akp@amazon.com
+console.log(newObj.email);//akp@amazon.com
+
+// But InCause of reference variable -- 
+// when we assign the reference(address) of a variable will be given to new 
+// variable and changin in one effects another one.
+
+
+
+

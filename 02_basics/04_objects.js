@@ -73,11 +73,50 @@ const user = [
 // Way to Access data from array of object in javascript  
 // console.log(user[1].email);// ak1@gmail.com 
 
-console.log(Object.keys(tinderUser)); // All key of object will be display in the form of ARRAY
-console.log(typeof Object.keys(tinderUser)); // Array its typeof will be object
-console.log(Object.values(tinderUser)); // All values of object will be display in the form of ARRAY
-console.log(Object.entries(tinderUser));// Every key value pair forms a array inside a single array 
+// console.log(Object.keys(tinderUser)); // All key of object will be display in the form of ARRAY
+// console.log(typeof Object.keys(tinderUser)); // Array its typeof will be object
+// console.log(Object.values(tinderUser)); // All values of object will be display in the form of ARRAY
+// console.log(Object.entries(tinderUser));// Every key value pair forms a array inside a single array 
 // Expected output -- [ [ 'id', '123Anc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
 // To check key is exist in object or not we have 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));// true if exist otherwise false-- 
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));// true if exist otherwise false-- 
+
+
+
+//----------------------- Object Part -3-----------
+const course = {
+    courseName : "Js Hindi",
+    price:"999",
+    courseInstructor:"Hitesh",
+} 
+
+// couse.courseInstructor
+//Object de - structure 
+
+//  const {courseInstructor} = course;
+//  console.log(courseInstructor);// Hitesh 
+// or  we can name according to us 
+const {courseInstructor:instructor} = course;
+console.log(instructor);// Hitesh 
+
+// API's Concept 
+// from backend some values are back ,,iniatially they comes in XML 
+// But now they comes in JSON format 
+// Json--- 
+// {
+//   name:"Hiesh",
+//   courseName:"Js In hIndi",
+//   price:"free",
+// }
+ // Some time response from API comes in the form of Arrays
+
+//  [
+//     {},
+//     {},
+//     {},
+//  ]
+// we can udersttod it with help of json formatter --- website
+
+
+

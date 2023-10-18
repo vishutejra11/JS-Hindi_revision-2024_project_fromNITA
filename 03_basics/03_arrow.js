@@ -15,7 +15,7 @@ const user = {
 // console.log(user.welcomemessage());// Hello Hietsh , welcome to SGA
 // user.username = "Sammy";
 // console.log(user.welcomemessage());// Hello Sammy , welcome to SGA
-// console.log(this);// current contetx object 
+// console.log(this);// current context object 
 
 // after that if()
 console.log(this);// { } it refers to the blank objects

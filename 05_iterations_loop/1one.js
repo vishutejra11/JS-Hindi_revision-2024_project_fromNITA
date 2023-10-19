@@ -30,3 +30,26 @@ console.log(`Value of i is ${i}`);
    if(i === 5) continue;
    else if(i===10) break;
 }
+
+
+// One best Scenario about array 
+const arr = [1,2,3,4, ,5,6, ,7,8];
+// If we define elements of array in above arr and iterate over it 
+// then value for not defined elements will be 
+
+for (const key of arr) {
+    console.log(key);
+}
+// Output -- 
+/* -- 
+1
+2
+3
+4
+undefined
+5
+6
+undefined
+7
+8   
+*/

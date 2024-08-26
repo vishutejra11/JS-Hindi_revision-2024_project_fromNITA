@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Ganga</title>
+</head>
+<body>
+  <h1>Chai And Javascript </h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+</body>
+<script>
+    const nameMe = ()=>{
+        console.log("Hello Anil", Date.now())
+    }
+    const start = document.querySelector('#start')
+    const stop = document.querySelector('#stop')
+    let st;
+    start.addEventListener('click', (e)=>{
+    console.log("Started");
+    if(!st){
+        st = setInterval(nameMe,2000);
+    }
+    },false)
+
+    stop.addEventListener('click', (e)=>{
+      console.log("Stopped");
+      clearInterval(st);
+      st = null;
+    },false)
+    
+
+   
+</script>
+</html>
